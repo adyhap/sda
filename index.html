@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition & Transform Example</title>
+    <style>
+        body {
+            background-color: #b2d8b2;
+            /* margin: 0; */
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navbar {
+            background-color: #a1d6a1;
+            display: flex;
+            flex-direction: column;
+            background-color: #3d3d73;
+            width: 400px;
+        }
+
+        .navbar a {
+            background-color: #5a5ab1;
+            color: white;
+            padding-right: 10px;
+            padding-left: 10px;
+            text-decoration: none;
+            border-bottom: 1px solid grey;
+            display: block;
+            padding-right: 50px;
+            padding: 5px;
+            margin: 0;
+        }
+
+        .title {
+            background-color: darkgreen;
+            color: #b2d8b2;
+            padding: 10px 10px 10px 10px;
+            margin-top: 10px;
+        }
+
+        .subtitle {
+            background-color: rgb(59, 120, 59);
+            color: #b2d8b2;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        table {
+            margin: 10px 0;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid grey;
+            border-left: none;
+            border-right: none;
+            padding: 5px;
+            text-align: center;
+            width: 50px;
+        }
+
+        th {
+            background-color: darkgreen;
+            border-top: none;
+            border-left: 5px solid #a1d6a1;
+        }
+
+        .footer {
+            border-bottom: 1px solid darkgrey;
+            padding: 5px 0;
+        }
+
+        /* .sublink {
+            padding-left: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <div class="navbar">
+        <div>
+            <a href="#">link</a>
+            <a href="#" class="sublink" style="padding-left: 20px;">sublink 1</a>
+            <a href="#" class="sublink" style="padding-left: 20px;">sublink 2</a>
+            <a href="#" class="sublink" style="padding-left: 20px;">sublink 3</a>
+        </div>
+        <div>
+            <a href=" #">link2</a>
+            <a href="#">link3</a>
+        </div>
+    </div>
+
+    <div class="wrapper-non-navbar">
+
+        <!-- Title -->
+        <div class="title">title 1</div>
+
+        <!-- Content -->
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet aliquam purus, venenatis
+                pharetra mi. Sed in urna odio. Suspendisse potenti. Curabitur interdum finibus iaculis. Suspendisse
+                ultricies consectetur turpis id vehicula. Ut nulla eros, consectetur in diam ut, blandit efficitur est.
+                Pellentesque vitae augue ac erat dignissim dignissim eget non enim.</p>
+
+            <img src="./static/smile.png" alt="Software Development Academy Logo" width="150">
+
+            <!-- Subtitle -->
+            <div class="subtitle">subtitle</div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet aliquam purus, venenatis
+                pharetra mi. Sed in urna odio. Suspendisse potenti. Curabitur interdum finibus iaculis. Suspendisse
+                ultricies consectetur turpis id vehicula. Ut nulla eros, consectetur in diam ut, blandit efficitur est.
+                Pellentesque vitae augue ac erat dignissim dignissim eget non enim.</p>
+
+            <div class="subtitle">subtitle</div>
+
+            <p>lorem ipsum</p>
+
+            <div class="subtitle">subtitle</div>
+
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+
+            <table>
+                <tr>
+                    <th>col1</th>
+                    <th>col2</th>
+                    <th>col3</th>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">sample text 1</div>
+        <div class="footer">sample text 2</div>
+        <div class="footer">sample text 3</div>
+
+    </div>
+</body>
+
+</html>
